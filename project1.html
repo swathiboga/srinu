@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device ,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+        <title>project1</title>
+     <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100:200:300:400:500&display=swap");
+        :root{
+            --blue:#5a81ea;
+            --purple:#9a1663;
+            --white:#ffffff;
+            --shadow:rgba(0,0,0,0.15)0px 5px 15px 0px;
+        }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: "Montserrat",sans-serif;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        background-color:var(--blue);
+    }
+    .search-bar{
+        display: flex;
+        align-items: center;
+        min-width: 700px;
+        border-radius: 50px;
+        background-color: var(--white);
+    }
+    .dropdown{
+        position: relative;
+        width: 280px;
+        border-radius: 50px;
+        border: 1px solid var(--white);
+        background-color: var(--purple);
+        box-shadow: var(--shadow);
+        cursor: pointer;
+    }
+    .dropdown-text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--white);
+        padding: 1rem 1.5rem;
+    }
+    .dropdown-list{
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        border-radius: 15px;
+        max-height: 0;
+        overflow: hidden;
+        background-color: var(--white);
+    }
+    #list.show{
+        max-height: 300px;
+    }
+    .dropdown-list-item{
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 1rem 0 1rem 1.5rem;
+        cursor: pointer;
+        transition: margin-left 0.2s ease,color 0.2s ease;
+    }
+    .dropdown-list-item:hover{
+        margin-left: 0.5rem;
+        color: var(--purple);
+
+    }
+    .search-box{
+        display: flex;
+        align-items: center;
+        padding-right: 1rem;
+        width: 100%;
+        color:var(--purple);
+    }
+    .search-box input{
+        padding: 1rem;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--purple);
+        border: 0;
+        outline: 0;
+    }
+    .search-box i{
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    .search-box input::placeholder{
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--purple);
+    }
+
+
+
+     </style>
+    </head>
+    <body>
+        <div class="search-bar">
+            <div class="dropdown">
+                <div id="drop-text"class="dropdown-text">
+                <span id="span">Everything</span>
+                <i id="icon"class="fa-solid fa-chevron-down"></i>
+            </div>
+            <ul id="list" class="dropdown-list">
+                <li class="dropdown-list-item">Everything</li>
+                <li class="dropdown-list-item">Software development</li>
+                <li class="dropdown-list-item">Web development</li>
+                <li class="dropdown-list-item">Data Analyst</li>
+                <li class="dropdown-list-item">IT Consultent</li>
+                <li class="dropdown-list-item">Network administrator</li>
+            </ul>
+            </div>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search Anything">
+                <i class="fa fa-search"></i>
+            </div>
+            </div>
+        
+        <script src="script.js"></script>
+
+    </body>
+</html>
