@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-commerce Product Page</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main.product-page {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.add-to-cart {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-to-cart:hover {
+  background-color: #555;
+}
+
+.customer-reviews {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.customer-reviews h2 {
+  margin-bottom: 10px;
+}
+
+.review-list {
+  list-style: none;
+}
+
+.review-list li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.related-products {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.related-products h2 {
+  margin-bottom: 10px;
+}
+
+.related-product-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.related-product-list li {
+  width: 30%;
+}
+
+.related-product-list img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="product-page">
+  <section class="product-details">
+    <div class="product-image">
+      <img src="C:\Users\swath\Downloads\product-image1.jpeg" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h1 class="product-name">Makeup Products</h1>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero a massa sollicitudin.</p>
+      <p class="product-price">$99.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="customer-reviews">
+    <h2>Customer Reviews</h2>
+    <ul class="review-list">
+      <li>
+        <p><strong>John Doe:</strong> "Great product! Highly recommended."</p>
+      </li>
+      <li>
+        <p><strong>Jane Smith:</strong> "Excellent quality and fast shipping."</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="related-products">
+    <h2>Related Products</h2>
+    <ul class="related-product-list">
+      <li><img src="C:\Users\swath\Downloads\related-product1.jpeg" alt="Related Product 1"></li>
+      <li><img src="C:\Users\swath\Downloads\related-product2.jpeg" alt="Related Product 2"></li>
+      <li><img src="C:\Users\swath\Downloads\related-product3.jpeg" alt="Related Product 3"></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 E-commerce Store. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
